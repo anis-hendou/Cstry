@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/eventcalendar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>eventCalendar</title>
+    <script src="../../js/eventCalender.js"></script>
+</head>
+<body>
+
+<section class="calendarSection">
+    <div class="title">
+        <h1>Hackathons, university activities, and club events</h1>
+    </div>
+
+    <section class="totalCalendar">
+        <!-- Création du calendrier -->
+         <div class="calendar1">
+            <h4>Featured events</h4>
+            <div class="calendar">
+                
+                <div class="month">
+                    <button id="previous" class="buttonCalendar" aria-label="Previous Month">
+                        <i id="monthID" class="fa-solid fa-arrow-left"></i>
+                    </button> 
+                    <h2>October 2024</h2>
+                    <button id="next" class="buttonCalendar" aria-label="Next Month">
+                        <i id="monthID"  class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="daysOfWeek">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div> 
+                    <div>Wed</div>
+                    <div>Thu</div> 
+                    <div>Fri</div> 
+                    <div>Sat</div> 
+                </div>
+
+                <div class="days">
+                    <!-- Les jours du mois -->
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day">30</div>
+                    <div class="day">31</div>
+                    <div class="empty"></div> 
+                    <div class="empty"></div>
+                    <div class="empty"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Section des détails de l'événement -->
+        <aside class="eventDetails">
+
+            <div class="eventTitle">
+                <h3>Event details</h3>
+            </div>
+            <h2>Hack the North</h2>
+
+            <section class="workPlace">
+                <p class="info"><i  id="ic" class="fa-solid fa-location-dot" aria-hidden="true"></i> Sidi_Abed Allah</p>
+                <p class="info"><i id="ic" class="fa-solid fa-briefcase"></i> Hackathon</p>
+            </section>
+
+            <section class="eventTextInfo">
+                <p class="textEvent">Hello, I am a text</p>
+                <button class="regEvent">Register</button>
+            </section>
+
+            <!-- <section class="addingDate">
+                <h2>Add to Calendar</h2>
+                <button class="addEvent">Add</button>
+            </section> -->
+
+            <div class="addingToCalendar">
+                <div class="text_Adding">
+                    <h2>Add to calendar</h2>
+                    <p>Google Calendar,iCal,Outlock</p>
+                </div>
+                <button class="addTo">Add</button>  
+            </div>
+            <section class="hostInfo">
+                <h3>Hosted by</h3>
+                <p class="info"><i id="ic" class="fa-solid fa-location-dot" aria-hidden="true"></i> Sidi_Abed Allah</p>
+            </section>
+        </aside>
+    </section>
+
+
+    <!-- Section des événements -->
+    <div class="eventList">
+        <div class="event" data-info="1">
+            <div class="eventIm_pa">
+                <img src="../../assets/images/Depth 6, Frame 0 (1).png" alt="Event image" class="eventImage">
+                <p>
+                    University of Waterloo<br>September 15-17, 2023<br>
+                </p>
+            </div>
+                <button class="DetailsBut">View Details</button>
+        </div>
+
+        <div class="event" data-info="2">
+            <div class="eventIm_pa">
+                <img src="../../assets/images/Depth 6, Frame 0 (1).png" alt="Event image" class="eventImage">
+                <p> University of Waterloo<br>September 15-17, 2023<br></p>
+            </div>
+            <button class="DetailsBut">View Details</button>
+        </div>
+
+        <div class="event" data-info="3">
+            <div class="eventIm_pa">
+                <img src="../../assets/images/Depth 6, Frame 0 (1).png" alt="Event image" class="eventImage">
+                <p>
+                    University of Waterloo<br>September 15-17, 2023<br>
+                </p>
+            </div>
+                <button class="DetailsBut">View Details</button>
+        </div>
+
+        <div class="event" data-info="4">
+            <div class="eventIm_pa">
+                <img src="../../assets/images/Depth 6, Frame 0 (1).png" alt="Event image" class="eventImage">
+                <p>
+                    University of Waterloo<br>September 15-17, 2023<br>
+                </p>
+            </div>
+                <button class="DetailsBut">View Details</button>
+        </div>
+    </div>
+</section>
+</body>
+</html>
